@@ -16,24 +16,25 @@ This README explains in full detail how to create, configure, build, and run a m
 
 You need to follow Maven's **standard directory structure since we are relying on maven to download the dependencies**:
 
-testproject1/
-├── pom.xml
-├── src/
-│   └── main/
-│       ├── java/
-│       │   ├── com/
-│       │   │    └── example/
-│       │   │       └──Main.java
-│       │   └── module-info.java
-│       └── resources/
-│           └── Mainview.fxml
-│
-├──lib(📁 lib/ — Optional directory for manually managed JARs)
-└──target(📁 target/ — Maven’s build output directory.contains compiled .class files, packaged .jar files, and any other build artifacts)
+testproject1/                                                                                                                                                                                                                                               
+├── pom.xml                                                                                                                                                                                                                                                 
+├── src/                                                                                                                                                                                                                                                    
+│   └── main/                                                                                                                                                                                                                                               
+│       ├── java/                                                                                                                                                                                                                                           
+│       │   ├── com/                                                                                                                                                                                                                                        
+│       │   │    └── example/                                                                                                                                                                                                                               
+│       │   │       └──Main.java                                                                                                                                                                                                                            
+│       │   └── module-info.java                                                                                                                                                                                                                            
+│       └── resources/                                                                                                                                                                                                                                      
+│           └── Mainview.fxml                                                                                                                                                                                                                               
+│                                                                                                                                                                                                                                                           
+├──lib(📁 lib/ — Optional directory for manually managed JARs)                                                                                                                                                                                             
+└──target(📁 target/ — Maven’s build output directory.contains compiled .class files, packaged .jar files, and any other build artifacts)                                                                                                                                                                                                                                                                                                                                                                              
+
 
 ---
 
-### Explanation:
+## Explanation:
 
 - `src/main/java/` holds `.java` source files.
 - `src/main/resources/` holds resource files like `.fxml`, images, or configuration files.
@@ -171,7 +172,7 @@ module com.example {
 }
 
 
-## 🔷 What is `module-info.java`?
+##  What is `module-info.java`?
 
 Introduced in **Java 9**, it's the **declaration file for a module**.
 
@@ -188,7 +189,7 @@ Let's explain line by line:
 
 ---
 
-### 🔸 `module com.example {`
+##  module com.example {`
 
 Defines the **module name**. This must match what you use in:
 
@@ -273,7 +274,7 @@ Now, this class can:
 
 ---
 
-## ✅ Why It’s Required for Main Class to be Found
+## Why It’s Required for Main Class to be Found
 
 Let’s look at this entry from your `pom.xml`:
 

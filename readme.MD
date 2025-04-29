@@ -65,7 +65,7 @@ This is the Maven build configuration file. Create it at the root of your projec
     </properties>
 
 
-##📦 Dependencies:
+## 📦 Dependencies:
 
 
     <dependencies>(This block tells Maven which external libraries your code depends on.)**
@@ -100,7 +100,7 @@ This is the Maven build configuration file. Create it at the root of your projec
     </dependencies>
 
 
-##🏗️ Build Section (How Maven builds your project)
+## 🏗️ Build Section (How Maven builds your project)
 
 
     <build>(Here you define plugins that control how the code is compiled, run, and packaged.)**
